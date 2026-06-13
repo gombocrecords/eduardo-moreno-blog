@@ -1,0 +1,133 @@
+# ──────────────────────────────────────────────────────────────
+# Decap CMS — Configuración completa
+# Blog de Eduardo José Moreno
+# ──────────────────────────────────────────────────────────────
+
+backend:
+  name: git-gateway
+  branch: main   # Cambiar a 'master' si su repositorio usa esa rama
+
+# Carpeta donde se guardan las imágenes subidas
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+# Idioma de la interfaz
+locale: es
+
+# Mostrar vista previa del artículo mientras se escribe
+show_preview_links: true
+
+# ──────────────────────────────────────────────────────────────
+# COLECCIONES
+# ──────────────────────────────────────────────────────────────
+collections:
+
+  # ── Artículos del Blog ────────────────────────────────────
+  - name: "posts"
+    label: "✍️ Artículos"
+    label_singular: "Artículo"
+    folder: "content/posts"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    preview_path: "articulos/{{slug}}"
+    summary: "{{title}} — {{category}} — {{date}}"
+    sortable_fields: ['date', 'title', 'category']
+    view_filters:
+      - label: "Movilidad"
+        field: category
+        pattern: "Movilidad"
+      - label: "Logística"
+        field: category
+        pattern: "Logística"
+      - label: "Infraestructura"
+        field: category
+        pattern: "Infraestructura"
+      - label: "Destacados"
+        field: featured
+        pattern: true
+      - label: "Borradores"
+        field: draft
+        pattern: true
+
+    fields:
+
+      - label: "📌 Título del artículo"
+        name: title
+        widget: string
+        hint: "Escriba el título completo del artículo"
+
+      - label: "📅 Fecha de publicación"
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DD"
+        date_format: "DD/MM/YYYY"
+        time_format: false
+        hint: "Seleccione la fecha de publicación"
+
+      - label: "🏷 Categoría"
+        name: category
+        widget: select
+        options:
+          - { label: "🚌 Movilidad",        value: "Movilidad" }
+          - { label: "📦 Logística",        value: "Logística" }
+          - { label: "🏗 Infraestructura",  value: "Infraestructura" }
+        hint: "Seleccione la categoría del artículo"
+
+      - label: "📝 Resumen (extracto)"
+        name: excerpt
+        widget: text
+        hint: "2 o 3 oraciones que describan el artículo. Aparece en la página de inicio."
+
+      - label: "🖼 Imagen principal"
+        name: image
+        widget: image
+        required: false
+        hint: "Imagen que aparece en la cabecera del artículo y en las listas. Opcional."
+        media_library:
+          config:
+            multiple: false
+
+      - label: "⭐ Artículo destacado"
+        name: featured
+        widget: boolean
+        default: false
+        hint: "Si activa esta opción, el artículo aparecerá en la sección de Destacados de la página de inicio."
+
+      - label: "💾 Guardar como borrador"
+        name: draft
+        widget: boolean
+        default: false
+        hint: "Si activa esta opción, el artículo NO será visible en el sitio hasta que desactive esta opción."
+
+      - label: "✏️ Contenido del artículo"
+        name: body
+        widget: markdown
+        hint: "Escriba o pegue aquí el contenido completo del artículo."
+        buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - quote
+          - bulleted-list
+          - numbered-list
+        editor_components:
+          - image
+
+  # ── Configuración del Autor ────────────────────────────────
+  - name: "settings"
+    label: "⚙️ Configuración"
+    files:
+
+      - label: "👤 Perfil del Autor"
+        name: "author"
+        file: "content/settings/author.md"
+        fields:
+          - { label: "Nombre completo",     name: name,     widget: string }
+          - { label: "Correo electrónico",  name: email,    widget: string }
+          - { label: "Teléfono",            name: phone,    widget: string }
+          - { label: "LinkedIn",            name: linkedin, widget: string }
+          - { label: "Biografía breve",     name: bio,      widget: text   }
+          - { label: "Foto del autor",      name: photo,    widget: image, required: false }
