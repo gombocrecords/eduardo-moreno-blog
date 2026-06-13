@@ -13,6 +13,13 @@ function ensureDir() {
   if (!fs.existsSync(POSTS_DIR)) fs.mkdirSync(POSTS_DIR, { recursive: true })
 }
 
+// gray-matter convierte fechas YAML a objetos Date — forzamos string
+function toDateString(value: unknown): string {
+  if (!value) return new Date().toISOString().split('T')[0]
+  if (value instanceof Date) return value.toISOString().split('T')[0]
+  return String(value)
+}
+
 export function getAllPostSlugs(): string[] {
   ensureDir()
   return fs
@@ -32,7 +39,7 @@ export function getAllPosts(): PostMeta[] {
       return {
         slug,
         title:       data.title       ?? 'Sin título',
-        date:        data.date        ?? new Date().toISOString(),
+        date:        toDateString(data.date),
         category:    data.category    ?? 'Movilidad',
         excerpt:     data.excerpt     ?? '',
         image:       data.image       ?? null,
@@ -63,7 +70,7 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
   return {
     slug,
     title:       data.title       ?? 'Sin título',
-    date:        data.date        ?? new Date().toISOString(),
+    date:        toDateString(data.date),
     category:    data.category    ?? 'Movilidad',
     excerpt:     data.excerpt     ?? '',
     image:       data.image       ?? null,
