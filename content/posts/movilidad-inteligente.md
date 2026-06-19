@@ -1,6 +1,6 @@
 ---
 title: MOVILIDAD INTELIGENTE
-date: 2026-06-13
+date: 2026-06-19
 category: Movilidad
 excerpt: >
   MOVILIDAD INTELIGENTE PARA UNA CIUDAD INTELIGENTE
