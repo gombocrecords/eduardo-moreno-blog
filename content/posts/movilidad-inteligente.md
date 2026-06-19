@@ -12,6 +12,7 @@ excerpt: >-
 
 
   Avanzar hacia una ciudad inteligente implica planificar el desarrollo urbano con una visión estratégica de largo plazo, incorporando tecnología, información y herramientas de gestión que permitan mejorar la eficiencia de los servicios, optimizar los desplazamientos y garantizar el acceso equitativo a la movilidad. Este artículo propone una reflexión sobre los desafíos actuales del transporte urbano y las acciones necesarias para construir una ciudad más ordenada, sustentable y preparada para el futuro.
+image: /images/uploads/colectivos-movilidad.jpg
 featured: false
 draft: true
 ---
