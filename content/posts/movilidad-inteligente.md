@@ -2,51 +2,18 @@
 title: MOVILIDAD INTELIGENTE
 date: 2026-06-19
 category: Movilidad
-excerpt: >
-  MOVILIDAD INTELIGENTE PARA UNA CIUDAD INTELIGENTE
+excerpt: >-
+  La movilidad es mucho más que un sistema de transporte: es uno de los factores
+  que determinan la calidad de vida de los ciudadanos y la competitividad de una
+  ciudad. En una Buenos Aires cada vez más compleja y dinámica, los problemas de
+  congestión, el uso inadecuado del espacio público y las dificultades de
+  coordinación metropolitana exigen soluciones que vayan más allá de las
+  respuestas coyunturales.
 
 
-  Un programa de gobierno debe ser parte integrante de una política de Estado, fundamentalmente en lo referido a los servicios públicos, (energía, salud, educación, transporte etc.) se encuentran estos bajo prestación estatal, concesionados o privatizados. Ello significa establecer objetivos a largo plazo, Es la hoja de ruta estratégica que debe guiar la gestión pública.
-
-
-  Los recursos públicos deben ser administrados sobre la base de políticas públicas, que son los grandes proyectos o programas que se diseñan como resultado de un proceso de análisis que terminan indefectiblemente en decisiones administrativas. Es la concreción de ideales que se construyen a partir de dinámicas sociales que requieren ser interpretadas con capacidad para ser administradas. 
-
-
-  Aplicar nuevos conceptos en materia de movilidad resulta trascendente para la economía de la ciudad y los usuarios, y por ser un servicio de alta visibilidad que tiene influencia en el ingreso medio de los usuarios y las decisiones provocan un sensible impacto político positivo. 
-
-
-  En la Ciudad de Buenos Aires, la permisividad manifiesta sobre el uso de las vías de circulación, vehiculares y peatonales, el descontrol en la ocupación del espacio público, el estacionamiento indebido, etc. lleva a que la ciudad se encuentre lejos de lograr estándares de sostenibilidad.
-   
-  El ciudadano requiere transporte para sus actividades: trabajo, educación, compras, ocio y esparcimiento que son las que dan origen a los viajes generando los flujos, componente importante del modo de vida urbano. Estas necesidades deben ser satisfechas con eficiencia, confort, seguridad, los menores tiempos de viajes posibles, amplia distribución en  términos de cobertura geográfica, todo ello sin menoscabar la calidad del medio social y físico, dado que desarrollo urbano y movilidad son inescindibles.
-
-
-  Para ello se debe tener en cuenta algunos conceptos básicos: a) La infraestructura vial y peatonal existente se puede mejorar, difícilmente ampliar; b) el espacio público es PÚBLICO, no puede ser destinado a actividades privadas salvo expresa y fundada autorización de la autoridad y dentro de los márgenes legales establecidos; c) trasladarse para el cumplimiento de sus actividades es un DERECHO de los ciudadanos que no puede limitarse por cuestiones económicas, de infraestructura, sociales, etc. 
-
-
-  Además de lo expresado, que la Ciudad de Buenos Aires continúa siendo el centro de concentración de tráfico del Área Metropolitana donde el sistema de transporte público en el Área Metropolitana es complejo y en alguna medida caótico. Múltiples jurisdicciones, falta de normativa que regule el sistema, carencia de seguridad jurídica de las prestatarias, sobre dimensionamiento del parque móvil, baja velocidad comercial que incide en la estructura de costos que no ha sido modificado y por consiguiente afecta los niveles de compensación tarifaria que, en términos económicos, durante mas de veinte años convirtió al Estado es el socio principal del sistema.
-
-
-  La ciudad sufre las consecuencias por las falencias en los servicios que la vinculan con el conurbano, y por las carencias en la Provincia de Buenos Aires que lleva a sus habitantes a concurrir a la ciudad por trabajo, educación o salud generando un flujo de viajes que contribuyen a la saturación de la vialidad de la ciudad.
-
-
-  Desde la década de los años ’60 se ha procurado establecer una autoridad metropolitana para planificar en conjunto el sistema de transporte del Area Metropolitana, considerando a la misma como una región, que en realidad no lo es, dado que no responde a una unidad territorial con características comunes sociales, económicas, culturales, etc. 
-
-
-  Muchas ciudades, han adoptado soluciones que se programan en función de objetivos determinados y, en todos los casos, incorporando tecnología para contar con información en tiempo real a fin de adoptar las soluciones más convenientes, teniendo en cuenta lo que acontece y las tendencias para diagramar acciones futuras, desarrollando indicadores que se articulan considerando la ocupación del suelo; el espacio público, la habitabilidad; la movilidad, los servicios; los espacios verdes, etc. y de esa manera establecer estrategias claras, controlar su cumplimiento, efectuando correcciones en función de las modificaciones que se producen. 
-
-
-  Una ciudad inteligente y sustentable es una ciudad innovadora que usa la información, las tecnologías de la comunicación y otros medios para mejorar la calidad de vida, la eficiencia de los servicios y la competitividad.
-
-
-  Gestionar este proceso donde el sistema de movilidad pública se encuentra entre las prioridades para facilitar el cumplimiento eficiente de las actividades de la población teniendo en cuenta las nuevas realidades, implementando acciones de manera ordenada, procurando, donde la inversión y el desarrollo privado resulta conveniente, brindando transparencia en los proyectos, con un cronograma para su implementación, controlando su ejecución,  observando los cambios que se producen, corrigiendo errores en caso de que estos sean detectados, y una con una estrategia en materia de propaganda para que los ciudadanos puedan comprender las ventajas de las propuestas.
-
-
-  Ello implica elaborar programas para el mediano y largo plazo, con intervenciones en el corto plazo orientadas a la modernización del sistema definiendo lineamientos de política institucional, estrategias proyectos y acciones que mejoren la calidad de vida de los habitantes de la ciudad y de aquellos que concurren diariamente a ella.
-
-
-  A partir de allí elaborar el programa de gobierno adoptando medidas inmediatas y de mediano plazo.
+  Avanzar hacia una ciudad inteligente implica planificar el desarrollo urbano con una visión estratégica de largo plazo, incorporando tecnología, información y herramientas de gestión que permitan mejorar la eficiencia de los servicios, optimizar los desplazamientos y garantizar el acceso equitativo a la movilidad. Este artículo propone una reflexión sobre los desafíos actuales del transporte urbano y las acciones necesarias para construir una ciudad más ordenada, sustentable y preparada para el futuro.
 featured: false
-draft: false
+draft: true
 ---
 MOVILIDAD INTELIGENTE PARA UNA CIUDAD INTELIGENTE
 
