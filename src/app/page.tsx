@@ -22,15 +22,9 @@ export default function HomePage() {
       <section className="bg-white border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 flex flex-col md:flex-row gap-10 items-center">
           <div className="flex-1 order-2 md:order-1">
-            <p className="text-teal-500 font-semibold text-sm uppercase tracking-widest mb-3">
-              Blog personal de Eduardo José Moreno
-            </p>
-            <h1 className="text-4xl sm:text-5xl font-serif font-bold text-navy-600 leading-tight mb-4">
+            <h1 className="text-4xl sm:text-5xl font-serif font-bold text-navy-600 leading-tight mb-8">
               Movilidad, Infraestructura y Logística
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed mb-6">
-              Análisis y opinión sobre movilidad urbana, logística internacional e infraestructura estratégica en América Latina.
-            </p>
             <div className="flex flex-wrap gap-3 mb-8">
               {SITE_CONFIG.categories.map(cat => (
                 <CategoryBadge key={cat} category={cat} size="md" />
