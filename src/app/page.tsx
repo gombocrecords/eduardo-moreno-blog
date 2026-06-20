@@ -19,12 +19,11 @@ export default function HomePage() {
 
   return (
     <>
-      {/* ── Hero ─────────────────────────────────────────── */}
       <section className="bg-white border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 flex flex-col md:flex-row gap-10 items-center">
           <div className="flex-1 order-2 md:order-1">
             <p className="text-teal-500 font-semibold text-sm uppercase tracking-widest mb-3">
-              Blog personal
+              Blog personal de Eduardo José Moreno
             </p>
             <h1 className="text-4xl sm:text-5xl font-serif font-bold text-navy-600 leading-tight mb-4">
               Movilidad, Infraestructura y Logística
@@ -43,7 +42,7 @@ export default function HomePage() {
             <div className="w-48 h-48 sm:w-56 sm:h-56 relative rounded-full overflow-hidden border-4 border-navy-600 shadow-xl">
               <Image
                 src="/images/autor.jpg"
-                alt="Movilidad, Infraestructura y Logística"
+                alt="Eduardo José Moreno"
                 fill
                 className="object-cover"
                 priority
@@ -53,7 +52,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Categorías ───────────────────────────────────── */}
       <section className="bg-gray-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
           <div className="grid grid-cols-3 gap-4">
@@ -62,15 +60,10 @@ export default function HomePage() {
               { cat: 'Logística',       href: '/logistica',       desc: 'Cadenas de suministro y puertos' },
               { cat: 'Infraestructura', href: '/infraestructura', desc: 'Obras públicas e inversión' },
             ] as const).map(({ cat, href, desc }) => (
-              <Link
-                key={cat}
-                href={href}
-                className="bg-white rounded-xl p-5 text-center border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all group"
-              >
+              <Link key={cat} href={href}
+                className="bg-white rounded-xl p-5 text-center border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all group">
                 <span className="text-3xl block mb-2">{CATEGORY_ICON[cat]}</span>
-                <h2 className="font-serif font-bold text-navy-600 text-lg group-hover:text-teal-500 transition-colors">
-                  {cat}
-                </h2>
+                <h2 className="font-serif font-bold text-navy-600 text-lg group-hover:text-teal-500 transition-colors">{cat}</h2>
                 <p className="text-xs text-gray-500 mt-1">{desc}</p>
                 <p className="text-xs text-teal-500 font-semibold mt-2">
                   {all.filter(p => p.category === cat).length} artículos →
@@ -82,8 +75,6 @@ export default function HomePage() {
       </section>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-
-        {/* ── Artículos Destacados ─────────────────────────── */}
         {featured.length > 0 && (
           <section className="py-12">
             <h2 className="text-2xl font-serif font-bold text-navy-600 mb-6 flex items-center gap-2">
@@ -97,25 +88,16 @@ export default function HomePage() {
           </section>
         )}
 
-        {/* ── Últimas Publicaciones ────────────────────────── */}
         <section className="py-12 border-t border-gray-100">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-serif font-bold text-navy-600 flex items-center gap-2">
-              <span>📝</span> Últimas Publicaciones
-            </h2>
-            {all.length > 6 && (
-              <Link href="/movilidad" className="text-sm font-semibold text-teal-500 hover:text-teal-600 transition-colors">
-                Ver todos →
-              </Link>
-            )}
-          </div>
-
+          <h2 className="text-2xl font-serif font-bold text-navy-600 mb-6 flex items-center gap-2">
+            <span>📝</span> Últimas Publicaciones
+          </h2>
           {latest.length === 0 ? (
             <div className="text-center py-20 text-gray-400">
               <p className="text-4xl mb-4">✍️</p>
               <p className="text-lg">Aún no hay artículos publicados.</p>
               <p className="text-sm mt-2">
-                Ingrese al panel de administración en{' '}
+                Ingrese al panel en{' '}
                 <Link href="/admin/" className="text-teal-500 underline">/admin</Link>
                 {' '}para crear su primer artículo.
               </p>
