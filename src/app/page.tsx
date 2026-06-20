@@ -27,7 +27,7 @@ export default function HomePage() {
               Blog personal
             </p>
             <h1 className="text-4xl sm:text-5xl font-serif font-bold text-navy-600 leading-tight mb-4">
-              Eduardo José Moreno
+              Movilidad, Infraestructura y Logística
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-6">
               Análisis y opinión sobre movilidad urbana, logística internacional e infraestructura estratégica en América Latina.
@@ -43,7 +43,7 @@ export default function HomePage() {
             <div className="w-48 h-48 sm:w-56 sm:h-56 relative rounded-full overflow-hidden border-4 border-navy-600 shadow-xl">
               <Image
                 src="/images/autor.jpg"
-                alt="Eduardo José Moreno"
+                alt="Movilidad, Infraestructura y Logística"
                 fill
                 className="object-cover"
                 priority
