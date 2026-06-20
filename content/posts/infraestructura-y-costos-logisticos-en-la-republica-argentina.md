@@ -17,7 +17,7 @@ excerpt: >-
   El desafío consiste en impulsar una estrategia de largo plazo que combine infraestructura adecuada, regulación eficiente y una mayor integración de los distintos modos de transporte. Solo así será posible reducir costos, mejorar la productividad y fortalecer la inserción de Argentina en los mercados internacionales.
 image: /images/uploads/tren-cereales.jpg
 featured: false
-draft: true
+draft: false
 ---
 
 
