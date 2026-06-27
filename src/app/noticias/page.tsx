@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 export default function NoticiasPage() {
-  const posts = getAllPosts().filter(p => p.category === 'Noticias')
+  const posts = getAllPosts().filter(p => (p.category as string) === 'Noticias')
 
   return (
     <main className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
