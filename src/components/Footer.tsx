@@ -13,7 +13,7 @@ export default function Footer() {
           <div>
             <h2 className="text-lg font-serif font-bold mb-3">{SITE_CONFIG.name}</h2>
             <p className="text-blue-200 text-sm leading-relaxed">
-              Análisis y opinión sobre movilidad, logística e infraestructura en América Latina.
+              Análisis y opinión sobre movilidad, logística e infraestructura.
             </p>
           </div>
 
@@ -27,6 +27,7 @@ export default function Footer() {
                 { label: 'Movilidad',       href: '/movilidad' },
                 { label: 'Logística',       href: '/logistica' },
                 { label: 'Infraestructura', href: '/infraestructura' },
+                { label: 'Noticias',        href: '/noticias' },
                 { label: 'Sobre el Autor',  href: '/sobre-el-autor' },
                 { label: 'Contacto',        href: '/contacto' },
               ].map(({ label, href }) => (
@@ -51,21 +52,19 @@ export default function Footer() {
                   {SITE_CONFIG.email}
                 </a>
               </li>
-              <li>
-                <span className="font-semibold text-white">Teléfono: </span>
-                {SITE_CONFIG.phone}
-              </li>
-              <li>
-                <span className="font-semibold text-white">LinkedIn: </span>
-                <a
-                  href={`https://${SITE_CONFIG.linkedin}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
-                >
-                  {SITE_CONFIG.linkedin}
-                </a>
-              </li>
+              {SITE_CONFIG.linkedin && (
+                <li>
+                  <span className="font-semibold text-white">LinkedIn: </span>
+                  
+                    href={`https://${SITE_CONFIG.linkedin}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    {SITE_CONFIG.linkedin}
+                  </a>
+                </li>
+              )}
             </ul>
           </div>
         </div>
