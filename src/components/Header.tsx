@@ -1,21 +1,23 @@
 'use client'
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { useState } from 'react'
+import Link              from 'next/link'
+import { usePathname }   from 'next/navigation'
+import { useState }      from 'react'
 
 const NAV = [
-  { label: 'Inicio', href: '/' },
-  { label: 'Movilidad', href: '/movilidad' },
-  { label: 'Logística', href: '/logistica' },
-  { label: 'Infraestructura', href: '/infraestructura' },
-  { label: 'Sobre el Autor', href: '/sobre-el-autor' },
-  { label: 'Contacto', href: '/contacto' },
+  { label: 'Inicio',           href: '/' },
+  { label: 'Movilidad',        href: '/movilidad' },
+  { label: 'Logística',        href: '/logistica' },
+  { label: 'Infraestructura',  href: '/infraestructura' },
+  { label: 'Noticias',         href: '/noticias' },
+  { label: 'Sobre el Autor',   href: '/sobre-el-autor' },
+  { label: 'Contacto',         href: '/contacto' },
 ]
 
 export default function Header() {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
+
   return (
     <header className="sticky top-0 z-50 bg-white border-b-4 border-navy-600 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -27,13 +29,16 @@ export default function Header() {
             {NAV.map(({ label, href }) => {
               const active = pathname === href || (href !== '/' && pathname.startsWith(href))
               return (
-                <Link key={href} href={href} className={`px-3 py-2 rounded-md text-sm font-semibold transition-colors ${active ? 'bg-navy-600 text-white' : 'text-gray-700 hover:bg-navy-50 hover:text-navy-600'}`}>
+                <Link key={href} href={href}
+                  className={`px-3 py-2 rounded-md text-sm font-semibold transition-colors ${
+                    active ? 'bg-navy-600 text-white' : 'text-gray-700 hover:bg-navy-50 hover:text-navy-600'
+                  }`}>
                   {label}
                 </Link>
               )
             })}
           </nav>
-          <button className="lg:hidden p-2 rounded-md text-navy-600" onClick={() => setOpen(v => !v)} aria-label="Abrir menú">
+          <button className="lg:hidden p-2 rounded-md text-navy-600 hover:bg-navy-50" onClick={() => setOpen(v => !v)} aria-label="Abrir menú">
             <span className="block w-6 h-0.5 bg-current mb-1.5" />
             <span className="block w-6 h-0.5 bg-current mb-1.5" />
             <span className="block w-6 h-0.5 bg-current" />
@@ -44,7 +49,10 @@ export default function Header() {
             {NAV.map(({ label, href }) => {
               const active = pathname === href || (href !== '/' && pathname.startsWith(href))
               return (
-                <Link key={href} href={href} onClick={() => setOpen(false)} className={`block px-4 py-3 rounded-md text-base font-semibold transition-colors ${active ? 'bg-navy-600 text-white' : 'text-gray-700 hover:bg-navy-50 hover:text-navy-600'}`}>
+                <Link key={href} href={href} onClick={() => setOpen(false)}
+                  className={`block px-4 py-3 rounded-md text-base font-semibold transition-colors ${
+                    active ? 'bg-navy-600 text-white' : 'text-gray-700 hover:bg-navy-50 hover:text-navy-600'
+                  }`}>
                   {label}
                 </Link>
               )

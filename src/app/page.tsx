@@ -48,11 +48,12 @@ export default function HomePage() {
 
       <section className="bg-gray-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {([
               { cat: 'Movilidad',       href: '/movilidad',       desc: 'Transporte y planificación urbana' },
               { cat: 'Logística',       href: '/logistica',       desc: 'Cadenas de suministro y puertos' },
               { cat: 'Infraestructura', href: '/infraestructura', desc: 'Obras públicas e inversión' },
+              { cat: 'Noticias',        href: '/noticias',        desc: 'Novedades del sector' },
             ] as const).map(({ cat, href, desc }) => (
               <Link key={cat} href={href}
                 className="bg-white rounded-xl p-5 text-center border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all group">
@@ -81,7 +82,6 @@ export default function HomePage() {
             </div>
           </section>
         )}
-
         <section className="py-12 border-t border-gray-100">
           <h2 className="text-2xl font-serif font-bold text-navy-600 mb-6 flex items-center gap-2">
             <span>📝</span> Últimas Publicaciones
