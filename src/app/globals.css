@@ -4,67 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-    font-size: 17px;
-  }
-
-  body {
-    @apply bg-gray-50 text-gray-900 antialiased;
-  }
-
-  /* Article prose styles */
-  .prose-article h2 {
-    @apply text-2xl font-serif font-bold text-navy-600 mt-10 mb-4;
-  }
-  .prose-article h3 {
-    @apply text-xl font-serif font-bold text-navy-600 mt-8 mb-3;
-  }
-  .prose-article p {
-    @apply text-gray-700 leading-relaxed mb-5 text-lg;
-  }
-  .prose-article ul {
-    @apply list-disc list-outside ml-6 mb-5 space-y-2;
-  }
-  .prose-article ol {
-    @apply list-decimal list-outside ml-6 mb-5 space-y-2;
-  }
-  .prose-article li {
-    @apply text-gray-700 text-lg leading-relaxed;
-  }
-  .prose-article blockquote {
-    @apply border-l-4 border-teal-500 pl-5 py-2 my-6 bg-teal-50 rounded-r-lg italic text-gray-700;
-  }
-  .prose-article a {
-    @apply text-teal-500 underline hover:text-teal-600 transition-colors;
-  }
-  .prose-article img {
-    @apply rounded-xl shadow-md my-8 w-full;
-  }
-  .prose-article strong {
-    @apply font-bold text-gray-900;
-  }
-  .prose-article hr {
-    @apply border-gray-200 my-10;
-  }
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: 'Nunito', sans-serif !important;
 }
-
-/* Navy custom colors */
-.bg-navy-600 { background-color: #1B3A6B; }
-.bg-navy-50  { background-color: #EEF2FF; }
-.bg-navy-700 { background-color: #162F56; }
-.text-navy-600 { color: #1B3A6B; }
-.text-navy-700 { color: #162F56; }
-.border-navy-600 { border-color: #1B3A6B; }
-.border-navy-700 { border-color: #162F56; }
-.hover\:bg-navy-50:hover { background-color: #EEF2FF; }
-.hover\:bg-navy-700:hover { background-color: #162F56; }
-.hover\:text-navy-600:hover { color: #1B3A6B; }
-.focus\:border-navy-600:focus { border-color: #1B3A6B; }
-
-.text-teal-500 { color: #0D7377; }
-.text-teal-600 { color: #0A5C5F; }
-.bg-teal-50  { background-color: #E8F8F5; }
-.border-teal-500 { border-color: #0D7377; }
-.hover\:text-teal-600:hover { color: #0A5C5F; }
