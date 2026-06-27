@@ -1,4 +1,4 @@
-export type Category = 'Movilidad' | 'Logística' | 'Infraestructura'
+export type Category = 'Movilidad' | 'Logística' | 'Infraestructura' | 'Noticias'
 
 export interface PostFrontmatter {
   title:       string
